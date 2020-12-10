@@ -4,6 +4,8 @@
   "description": "App scaffold for Node.js",
   "main": "lib/index.js",
   "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
     "test": "tap ./test/*.test.js"
   },
   "files": [
@@ -30,6 +32,7 @@
     "@buzuli/unhandled": "^2.0.0"
   },
   "devDependencies": {
+    "standard": "^16.0.3",
     "tap": "^14.11.0"
   }
 }

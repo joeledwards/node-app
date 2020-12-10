@@ -14,7 +14,7 @@ Node.js app wrapper
 const app = require('@buzuli/app')
 
 const entry = async (context) => {
-    // app entry point
+  // app entry point
 }
 
 const options = {
@@ -24,6 +24,10 @@ const options = {
 }
 
 app(entry, options)
+// OR
+app(options, entry)
+// OR
+app(options)(entry)
 ```
 
 
